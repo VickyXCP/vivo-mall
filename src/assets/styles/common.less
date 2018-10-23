@@ -1,0 +1,69 @@
+@charset "utf-8";
+
+/* 禁用iPhone中Safari的字号自动调整 */
+html { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+
+/* 初始化 */
+body, div, ul, li, ol, h1, h2, h3, h4, h5, h6, input, textarea, select, p, dl, dt, dd, a, img, button, form, table, th, tr, td, tbody, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  margin: 0;
+  padding: 0;
+  border: none;
+  list-style: none;
+}
+body {
+  font-family: 'Microsoft Yahei', '微软雅黑', '宋体', arial, 'Hiragino Sans GB', Tahoma, Arial, Helvetica;
+  color: #333;
+  //background-color: #ffffff;
+  //background: #C1E0FF;
+}
+
+/*字号、字体*/
+button, input, select, textarea { font-family: '华文细黑','Microsoft Yahei', '微软雅黑', '宋体', arial, 'Hiragino Sans GB', Tahoma, Arial, Helvetica; outline: none; }
+
+/*下划线*/
+a { text-decoration: none; display: block; }
+
+/*鼠标悬停显示下划线*/
+a:hover { text-decoration: none; }
+
+/* 去除iPhone中默认的input样式 */
+input[type="submit"], input[type="reset"], input[type="button"] { -webkit-appearance: none; resize: none; outline: none; }
+
+/* 取消链接高亮  */
+body, div, ul, li, ol, h1, h2, h3, h4, h5, h6, input, textarea, select, p, dl, dt, dd, a, img, button, form, table, th, tr, td, tbody, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+
+/* 设置HTML5元素为块 */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+
+/* 图片自适应 */
+img { width: 100%; height: 100%; width: auto\9; /* ie8 */ -ms-interpolation-mode: bicubic;/*为了照顾ie图片缩放失真*/ border: 0; display: block; outline: none; }
+
+/*清除倾斜*/
+em, i { font-style: normal; display: inline-block; }
+
+/*清除自带的符号*/
+ul, ol, li, dl, dd, dt { list-style: none; }
+
+/*让子元素继承父元素的字号、不加粗*/
+h1, h2, h3, h4, h5, h6 { font-size: 100%; font-weight: normal; }
+
+/*form表单的标题颜色为黑色*/
+legend { color: #111; }
+
+/*清除img标签被a标签包含的时候出现蓝色的边框*/
+fieldset, img { border: 0; }
+
+/*鼠标移上显示手形*/
+label, button { cursor: pointer; }
+
+//
+html, body{
+  width: 100%;
+  height: 100%;
+}
+
+/*非‘我的’页面留出头部搜索框的高度*/
+.content{
+  margin-top: 2.5rem;
+  width: 100%;
+}
